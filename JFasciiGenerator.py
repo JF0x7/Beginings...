@@ -1,6 +1,15 @@
 # Local ASCII art bank
 ascii_bank = {
-    "bird": JF"""
+    "qtum": r"""
+         o-----o-----o
+         / \         / \
+        o---o QTUM  o---o
+         \ /         \ /
+          o-----o-----o
+           \         / \
+            o-------o   o
+""",
+    "bird": """
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⣤⣤⣀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣷⣆⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⠋⠙⢿⣿⣦⣄⡀
@@ -13,19 +22,19 @@ ascii_bank = {
 ⠀⠀⠀⠀⠉⠙⠻⠿⠿⣿⣿⣿⣿⣿⣯⣄⡀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠛⠛⠻⢿⡿⠁⠀⠀⠀⠀⠀
 """,
-    "cat": JF"""
- /\_/\  
-( o.o ) 
- > ^ <  
+    "cat": """
+ /\\_/\\  
+ ( o.o ) 
+  > ^ <  
 """,
-    "dog": JF"""
-  / \__
- (    @\___
+    "dog": """
+  / \\__
+ (    @\\___
  /         O
 /   (_____/
-/_____/ U
+\\_____/ U
 """,
-"skull": JF"""
+    "skull": r"""
       ______
    .-'      '-.
   /            \\
@@ -39,24 +48,16 @@ ascii_bank = {
    \          /
     `--------`
 """,
-"car": JF"""
+    "car": r"""
         ______
-       /|_||_\`.__
-      (   _    _ _\
+       /|_||_\\`.__
+      (   _    _ _\\
       =`-(_)--(_)-'
 """,
-"coin": JF"""
-      .--------.
-    .' $$$$$$$$ '.
-   /  $$$$$$$$$$  \
-  | $$$ Jeremi $$$|
-  | $$$ Folta $$$ |
-  | $$$  777 $$$  |
-   \  $$$$$$$$$$  /
-    '. $$$$$$$$ .'
-      '--------'
+    "coin": """
+     
 """,
-"diamond": JF"""
+    "diamond": r"""
     /\    
    /  \   
   / /\ \  
@@ -66,23 +67,13 @@ ascii_bank = {
    \  /
     \/
 """,
-"book": JF"""
+    "book": """
      ________
     /     ///
    /     ///
   /_____///
  (______(/
-""",
-    "QTUM": JF"""
-          o-----o-----o
-         / \         / \
-        o---o  QTUM o---o
-         \ /         \ /
-          o-----o-----o
-           \         /\
-            o-------o  \
-                        o                    
-""",
+"""
 }
 
 # Fetch ASCII art from the bank
@@ -93,9 +84,9 @@ def fetch_ascii_art(subject):
 # Main loop
 def main():
     print("🐾 ASCII Image Generator — Type 'exit' to quit")
-    print("🎯 Try subjects like: skull, bird, car, cat, coin, dog, diamond, book")
+    print("🎯 Try subjects like: skull, bird, car, cat, coin, dog, diamond, book, qtum")
     while True:
-        subject = input("\n🔤 What image would you like in ASCII like: skull, bird, car, cat, coin, dog, diamond, book? ").strip()
+        subject = input("\n🧙‍♂️ What image would you like in ASCII? ").strip()
         if subject.lower() == "exit":
             print("👋 Goodbye!")
             break
@@ -104,6 +95,4 @@ def main():
         print(art)
 
 if __name__ == "__main__":
-
     main()
-
