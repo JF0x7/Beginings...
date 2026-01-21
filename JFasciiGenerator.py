@@ -1,5 +1,16 @@
 # Local ASCII art bank
 ascii_bank = {
+
+    "baby": r"""
+
+              -------- 
+             / -   -  \
+            |  .-. .- |
+            |  \o| |o (
+            \     ^    \
+             '.  )--'  /
+               '-...-'`
+""",
     "qtum": r"""
          o-----o-----o
          / \         / \
@@ -84,7 +95,7 @@ def fetch_ascii_art(subject):
 # Main loop
 def main():
     print("🐾 ASCII Image Generator — Type 'exit' to quit")
-    print("🎯 Try subjects like: skull, bird, car, cat, coin, dog, diamond, book, qtum")
+    print("🎯 Try subjects like: baby, skull, bird, car, cat, coin, dog, diamond, book, qtum")
     while True:
         subject = input("\n🧙‍♂️ What image would you like in ASCII? ").strip()
         if subject.lower() == "exit":
