@@ -4,4 +4,4 @@ I have a computer systems information technology diploma from SAIT.
 Looking to contribute more to github.
 26 years old Polish-Canadian living in Canada.
 Found some old files from school.
-Going to buiild a blockchain using hyperledger the way Josh Cook showed me.
+Going to build a blockchain using hyperledger the way Josh Cook showed me.
