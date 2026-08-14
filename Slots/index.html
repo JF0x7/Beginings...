@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- Specifies the document type and version of HTML -->
+<html lang="en"> <!-- Sets the language attribute to English for the document -->
+<!-- Links to an external CSS file for styling -->
+<link rel="stylesheet" href="GetOnYourFace.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+<!-- Links to an external CSS file for styling -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling on different devices -->
+    <title>OnYourFaces.com</title> <!-- Sets the title of the web page --> <!-- Link to your favicon -->
+    <link rel="icon" href="images/smiley.png" type="image/x-icon"> <!-- Link to Google Font 'Cinzel Decorative' -->
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to OnYourFaces.com</h1> <!-- Main heading of the web page -->
+    </header>
+    <main>
+        <section id="home">
+            <!-- Add the smiley image --> <img src="images/smiley.png" alt="smiley" id="smiley">
+            <h2>Slot Machine</h2> <!-- Subheading for the Home section -->
+            <p>Spin To Test Your Luck!</p> <!-- Paragraph content for the Home section -->
+            <div class="slot-machine" id="slotMachine">
+                <!-- Three div elements representing the reels of the slot machine -->
+                <div class="reel" id="reel1">😀</div> <!-- First reel with an emoji -->
+                <div class="reel" id="reel2">😃</div> <!-- Second reel with an emoji -->
+                <div class="reel" id="reel3">😄</div> <!-- Third reel with an emoji -->
+            </div>
+            <button id="spinButton">Spin</button> <!-- Button to spin the slot machine -->
+            <p id="result"></p> <!-- Placeholder for displaying the result of the spin -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 OnYourFaces.com. All rights reserved.</p> <!-- Footer content with copyright information -->
+    </footer>
+    <!-- Link to the external JavaScript file -->
+    <script src="SlotMachine.js"></script>
+</body>
+
+</html>
